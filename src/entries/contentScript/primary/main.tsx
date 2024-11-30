@@ -1,13 +1,13 @@
-import logo from "~/assets/logo.svg";
+import "../../enableDevHmr";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import renderContent from "../renderContent";
+import App from "./App";
 
-function App() {
-  const logoImageUrl = new URL(logo, import.meta.url).href;
-
-  return (
-    <div className="logo">
-      <img src={logoImageUrl} height="50" alt="" />
-    </div>
+renderContent(import.meta.PLUGIN_WEB_EXT_CHUNK_CSS_PATHS, (appRoot) => {
+  ReactDOM.createRoot(appRoot).render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
   );
-}
-
-export default App;
+});
