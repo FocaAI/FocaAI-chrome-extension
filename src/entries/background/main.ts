@@ -11,7 +11,7 @@ chrome.tabs.onUpdated.addListener(async (tabId, info, tab) => {
   const url = new URL(tab.url);
   // Enables the side panel on google.com
   if (url.origin === GOOGLE_ORIGIN) {
-    alert('Google detected');
+    console.log('Enabling side panel');
     await chrome.sidePanel.setOptions({
       tabId,
       path: 'src/entries/sidebar/index.html',
