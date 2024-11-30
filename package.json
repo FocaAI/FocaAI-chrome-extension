@@ -2,7 +2,10 @@
   "name": "focaai-chrome-extension",
   "private": true,
   "version": "0.0.0",
-  "author": {"name": "Henrique de Paula Rodrigues", "email": "tec.henriquedepaula@gmail.com"},
+  "author": {
+    "name": "Henrique de Paula Rodrigues",
+    "email": "tec.henriquedepaula@gmail.com"
+  },
   "description": "Foca.ai Chrome Extension, your best friend for productivity",
   "displayName": "Foca.ai",
   "type": "module",
@@ -16,24 +19,25 @@
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "webextension-polyfill": "~0.10.0"
+    "webextension-polyfill": "~0.12.0"
   },
   "devDependencies": {
-    "@samrum/vite-plugin-web-extension": "^4.0.0",
-    "@types/chrome": "^0.0.228",
-    "@types/react": "^18.0.28",
-    "@types/react-dom": "^18.0.11",
-    "@types/webextension-polyfill": "^0.10.0",
-    "@vitejs/plugin-react": "^3.1.0",
-    "autoprefixer": "~10.4.14",
-    "postcss": "~8.4.23",
-    "postcss-import": "~15.1.0",
-    "prettier": "~2.8.7",
-    "prettier-plugin-tailwindcss": "~0.2.7",
-    "tailwindcss": "~3.3.1",
-    "typescript": "^4.9.5",
-    "user-agent-data-types": "~0.3.1",
-    "vite": "~4.1.4",
-    "web-ext": "^7.4.0"
-  }
+    "@samrum/vite-plugin-web-extension": "^5.1.1",
+    "@types/chrome": "^0.0.287",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@types/webextension-polyfill": "^0.12.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "~10.4.20",
+    "postcss": "~8.4.49",
+    "postcss-import": "~16.1.0",
+    "prettier": "~3.4.1",
+    "prettier-plugin-tailwindcss": "~0.6.9",
+    "tailwindcss": "~3.4.15",
+    "typescript": "^5.7.2",
+    "user-agent-data-types": "~0.4.2",
+    "vite": "~6.0.1",
+    "web-ext": "^8.3.0"
+  },
+  "packageManager": "yarn@4.5.3"
 }
