@@ -36,6 +36,7 @@ const manifest = {
     page: "src/entries/options/index.html",
     open_in_tab: true,
   },
+  trial_tokens: [import.meta.env.VITE_SUMMARIZATION_API_URL || ""]
 };
 
 export function getManifest(): chrome.runtime.ManifestV3 {
