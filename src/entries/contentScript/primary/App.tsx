@@ -1,5 +1,4 @@
-import logo from "~/assets/logo.svg";
-import "./App.css";
+import logo from '@/assets/logo.svg';
 
 function App() {
   const logoImageUrl = new URL(logo, import.meta.url).href;

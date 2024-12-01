@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from '~/assets/logo.svg';
+import logo from '@/assets/logo.svg';
 
 function PageContent(props: { children: React.ReactNode }) {
   const imageUrl = new URL(logo, import.meta.url).href;

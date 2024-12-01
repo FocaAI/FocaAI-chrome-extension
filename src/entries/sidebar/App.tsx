@@ -3,7 +3,7 @@ import PageContent from '@/components/PageContent';
 function App() {
   return (
     <main>
-      <PageContent>Popup</PageContent>
+      <PageContent>SIDEBAR</PageContent>
     </main>
   );
 }

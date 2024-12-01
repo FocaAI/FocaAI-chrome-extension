@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "bradlc.vscode-tailwindcss",
+    "streetsidesoftware.code-spell-checker",
+    "hediet.vscode-drawio",
+    "editorconfig.editorconfig",
+    "dbaeumer.vscode-eslint",
+    "dsznajder.es7-react-js-snippets",
+    "yzhang.markdown-all-in-one"
+  ]
+}
