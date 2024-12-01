@@ -1154,7 +1154,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*":
+"@types/node@npm:*, @types/node@npm:^22.10.1":
   version: 22.10.1
   resolution: "@types/node@npm:22.10.1"
   dependencies:
@@ -1926,6 +1926,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"class-variance-authority@npm:^0.7.1":
+  version: 0.7.1
+  resolution: "class-variance-authority@npm:0.7.1"
+  dependencies:
+    clsx: "npm:^2.1.1"
+  checksum: 10c0/0f438cea22131808b99272de0fa933c2532d5659773bfec0c583de7b3f038378996d3350683426b8e9c74a6286699382106d71fbec52f0dd5fbb191792cccb5b
+  languageName: node
+  linkType: hard
+
 "clean-stack@npm:^2.0.0":
   version: 2.2.0
   resolution: "clean-stack@npm:2.2.0"
@@ -1955,6 +1964,13 @@ __metadata:
   version: 1.0.4
   resolution: "clone@npm:1.0.4"
   checksum: 10c0/2176952b3649293473999a95d7bebfc9dc96410f6cbd3d2595cf12fd401f63a4bf41a7adbfd3ab2ff09ed60cb9870c58c6acdd18b87767366fabfc163700f13b
+  languageName: node
+  linkType: hard
+
+"clsx@npm:^2.1.1":
+  version: 2.1.1
+  resolution: "clsx@npm:2.1.1"
+  checksum: 10c0/c4c8eb865f8c82baab07e71bfa8897c73454881c4f99d6bc81585aecd7c441746c1399d08363dc096c550cceaf97bd4ce1e8854e1771e9998d9f94c4fe075839
   languageName: node
   linkType: hard
 
@@ -3076,21 +3092,27 @@ __metadata:
   dependencies:
     "@samrum/vite-plugin-web-extension": "npm:^5.1.1"
     "@types/chrome": "npm:^0.0.287"
+    "@types/node": "npm:^22.10.1"
     "@types/react": "npm:^18.3.12"
     "@types/react-dom": "npm:^18.3.1"
     "@types/webextension-polyfill": "npm:^0.12.1"
     "@vitejs/plugin-react": "npm:^4.3.4"
     autoprefixer: "npm:~10.4.20"
+    class-variance-authority: "npm:^0.7.1"
+    clsx: "npm:^2.1.1"
     eslint: "npm:^9.16.0"
     eslint-plugin-react-hooks: "npm:^5.0.0"
     eslint-plugin-react-refresh: "npm:^0.4.14"
+    lucide-react: "npm:^0.462.0"
     postcss: "npm:~8.4.49"
     postcss-import: "npm:~16.1.0"
     prettier: "npm:^3.4.1"
     prettier-plugin-tailwindcss: "npm:~0.6.9"
     react: "npm:^18.3.1"
     react-dom: "npm:^18.3.1"
+    tailwind-merge: "npm:^2.5.5"
     tailwindcss: "npm:~3.4.15"
+    tailwindcss-animate: "npm:^1.0.7"
     typescript: "npm:^5.7.2"
     typescript-eslint: "npm:^8.16.0"
     user-agent-data-types: "npm:~0.4.2"
@@ -4041,6 +4063,15 @@ __metadata:
   dependencies:
     yallist: "npm:^3.0.2"
   checksum: 10c0/89b2ef2ef45f543011e38737b8a8622a2f8998cddf0e5437174ef8f1f70a8b9d14a918ab3e232cb3ba343b7abddffa667f0b59075b2b80e6b4d63c3de6127482
+  languageName: node
+  linkType: hard
+
+"lucide-react@npm:^0.462.0":
+  version: 0.462.0
+  resolution: "lucide-react@npm:0.462.0"
+  peerDependencies:
+    react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0-rc
+  checksum: 10c0/684477fcd130036c89535ea21a1a35d95fc3e45e41cb5cdcc56702cdb28aa7c8b9f5cfba12123229949d79f6dc19eac27b1d1452a14803a81424d461477c37cf
   languageName: node
   linkType: hard
 
@@ -5740,6 +5771,22 @@ __metadata:
   version: 1.0.0
   resolution: "supports-preserve-symlinks-flag@npm:1.0.0"
   checksum: 10c0/6c4032340701a9950865f7ae8ef38578d8d7053f5e10518076e6554a9381fa91bd9c6850193695c141f32b21f979c985db07265a758867bac95de05f7d8aeb39
+  languageName: node
+  linkType: hard
+
+"tailwind-merge@npm:^2.5.5":
+  version: 2.5.5
+  resolution: "tailwind-merge@npm:2.5.5"
+  checksum: 10c0/32614dd2b4ddd4fab070d5ec569e6da00e2b34269b9ac2f2ff16733cef29a076c8e2210fbfc1904d7983a8fdb6b3e63d18ca117645f21b12ca7bcf8fe3507241
+  languageName: node
+  linkType: hard
+
+"tailwindcss-animate@npm:^1.0.7":
+  version: 1.0.7
+  resolution: "tailwindcss-animate@npm:1.0.7"
+  peerDependencies:
+    tailwindcss: "*"
+  checksum: 10c0/ec7dbd1631076b97d66a1fbaaa06e0725fccfa63119221e8d87a997b02dcede98ad88bb1ef6665b968f5d260fcefb10592e0299ca70208d365b37761edf5e19a
   languageName: node
   linkType: hard
 
