@@ -26,7 +26,7 @@ Foca AI is a Chrome extension that helps you focus on your tasks while browsing 
   - [Running Locally](#running-locally)
     - [Setting up environment variables](#setting-up-environment-variables)
       - [Environment purposes](#environment-purposes)
-    - [Using environment variables in manifest file](#using-environment-variables-in-manifest-file)
+    - [Using environment variables in the manifest file](#using-environment-variables-in-the-manifest-file)
     - [Building and running the project](#building-and-running-the-project)
     - [Registering the extension](#registering-the-extension)
   - [Contributing](#contributing)
@@ -45,7 +45,7 @@ Foca AI is a Chrome extension that helps you focus on your tasks while browsing 
 
 If you want to run this project locally, you will need [git](https://git-scm.com/downloads) and [Node.js](https://nodejs.org/en).
 
-Them, you can clone this repository by running the following commands in your terminal:
+Then, you can clone this repository by running the following commands in your terminal:
 
 ```zsh
 git clone git@github.com:FocaAI/FocaAI-chrome-extension.git
@@ -65,12 +65,13 @@ Here you can see the purpose of each environment variable.
 
 - `VITE_SUMMARIZATION_API_URL`: Provides the token to summarization access into the manifest `trial_tokens` following [this guide from chrome documentation](https://googlechrome.github.io/OriginTrials/developer-guide.html)
 - `VITE_CHROME_EXTENSION_ID`: Your chrome extension ID, used to register the token for the [summarization API](https://chromestatus.com/feature/5193953788559360).
-  > [!NOTE]
-  > if any of them is missing, please create an issue following the [contribution guidelines]().
 
-### Using environment variables in manifest file
+> [!NOTE]
+> If any of them is missing, please create an issue following the [contribution guidelines](./.github.CONTRIBUTION.md).
 
-To do that into the manifest builder, we had to configure the vite config in a different way.
+### Using environment variables in the manifest file
+
+To do that in the manifest builder, we had to configure the vite config in a different way.
 
 The `vite.config.ts` file loads the environment variables in the config definition. Parsing them to the `getManifest` handler.
 > [!IMPORTANT]
@@ -123,8 +124,8 @@ After building the project, you can register the extension in your browser.
 To do that, you should follow the steps below:
 
 1. Open the Extension Management page by navigating to `chrome://extensions`.
-   - The Extension Management page can also be opened by clicking on the Chrome menu, hovering over `More Tools` then selecting `Extensions`.
-2. Enable Developer Mode by clicking the toggle switch next to Developer mode.
+   - The Extension Management page can also be opened by clicking on the Chrome menu, hovering over `More Tools` then select `Extensions`.
+2. Enable Developer Mode by clicking the toggle switch next to Developer Mode.
 3. Click the `Load unpacked` button and select the extension directory.
 4. The extension will be loaded into your browser.
 5. You can see the extension in the toolbar.
@@ -133,8 +134,8 @@ To do that, you should follow the steps below:
 
 ## Contributing
 
-To contribute to this project you can create a issue report, and help us to
-find bugs, suggest features and create discussions about this extension. We are always looking for improvements to the project and contributions from open-source developers are greatly appreciated.
+To contribute to this project you can create an issue report, and help us to
+find bugs, suggest features, and create discussions about this extension. We are always looking for improvements to the project and contributions from open-source developers are greatly appreciated.
 
 ### Contribution Guidelines and Code of Conduct
 
@@ -168,7 +169,7 @@ The extension manifest is defined in src/manifest.js and used by @samrum/vite-pl
 Background, content scripts, options, and popup entry points exist in the **src/entries** directory.
 
 > [!TIP]
-> You can find information about how those files are used into in the [Developer chrome documentation](https://developer.chrome.com/docs/extensions/get-started?hl=pt-br).
+> You can find information about how those files are used in the [Developer chrome documentation](https://developer.chrome.com/docs/extensions/get-started?hl=pt-br).
 
 ##### Content scripts
 
@@ -185,9 +186,9 @@ Otherwise, the project functions just like a regular Vite project.
 
  - `dev`: run the vite application normally.
  - `build`: Build the application into the `/dist` directory.
- - `watch`: **Hot Module Resolution** to update dist folder on each change.
- - `serve:chrome`: serve files into the `/dist` on chrome extensions.
- - `serve:firefox`: same as the previous command but on the firefox application.
+ - `watch`: **Hot Module Resolution** to update the dist folder on each change.
+ - `serve:chrome`: serve files into the `/dist` on Chrome extensions.
+ - `serve:firefox`: same as the previous command but on the Firefox application.
 
 ## License
 
