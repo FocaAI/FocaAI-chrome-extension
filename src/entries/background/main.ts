@@ -1,7 +1,7 @@
-import browser from "webextension-polyfill";
+import browser from 'webextension-polyfill';
 
 browser.runtime.onInstalled.addListener(() => {
-  console.log("Extension installed");
+  console.log('Extension installed');
 });
 
 const GOOGLE_ORIGIN = 'https://www.google.com';
@@ -15,13 +15,13 @@ chrome.tabs.onUpdated.addListener(async (tabId, info, tab) => {
     await chrome.sidePanel.setOptions({
       tabId,
       path: 'src/entries/sidebar/index.html',
-      enabled: true
+      enabled: true,
     });
   } else {
     // Disables the side panel on all other sites
     await chrome.sidePanel.setOptions({
       tabId,
-      enabled: false
+      enabled: false,
     });
   }
 });
