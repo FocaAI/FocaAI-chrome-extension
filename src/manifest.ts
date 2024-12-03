@@ -1,5 +1,9 @@
 import pkg from '../package.json';
-const manifest: Partial<chrome.runtime.ManifestV3> = {
+type ExtendedManifestPermissions = chrome.runtime.ManifestPermissions | 'aiLanguageModelOriginTrial';
+type ExtendedManifest = Omit<chrome.runtime.ManifestV3, 'permissions'> & {
+  permissions?: (ExtendedManifestPermissions)[]; trial_tokens: string[];
+};
+const manifest: Partial<ExtendedManifest> = {
   action: {
     default_icon: {
       36: 'icons/36.png',
@@ -41,15 +45,15 @@ const manifest: Partial<chrome.runtime.ManifestV3> = {
 };
 export function getManifest(
   env: Record<string, string>
-): chrome.runtime.ManifestV3 {
+): ExtendedManifest {
   return {
     author: { email: pkg.author.email },
     description: pkg.description,
     name: pkg.displayName ?? pkg.name,
     version: pkg.version,
     manifest_version: 3,
-    permissions: ['contextMenus', 'sidePanel'],
+    permissions: ['contextMenus', 'sidePanel', 'aiLanguageModelOriginTrial'],
     ...manifest,
-    trial_tokens: [env.VITE_SUMMARIZATION_API_URL || ''],
+    trial_tokens: [env.VITE_SUMMARIZATION_API || '', env.VITE_GENERATOR_API || ''],
   };
 }
