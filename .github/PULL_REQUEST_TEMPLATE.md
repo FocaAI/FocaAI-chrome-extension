@@ -47,8 +47,8 @@ Please provide some steps for the reviewer to test your change. If you have wrot
   commits if your PR already received reviews or comments.
   
   Before submitting a Pull Request, please ensure you've done the following:
-  - 📖 Read the Open Sauced Contributing Guide: https://github.com/open-sauced/.github/blob/main/CONTRIBUTING.md.
-  - 📖 Read the Open Sauced Code of Conduct: https://github.com/open-sauced/.github/blob/main/CODE_OF_CONDUCT.md.
+  - 📖 Read the Foca AI Contributing Guide: https://github.com/FocaAI/FocaAI-chrome-extension/.github/blob/main/CONTRIBUTING.md.
+  - 📖 Read the Foca AI Code of Conduct: https://github.com/FocaAI/FocaAI-chrome-extension/.github/blob/main/CODE_OF_CONDUCT.md.
   - 👷‍♀️ Create small PRs. In most cases, this will be possible.
   - ✅ Provide tests for your changes.
   - 📝 Use descriptive commit messages.
