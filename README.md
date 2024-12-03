@@ -63,9 +63,9 @@ To setup the project you should create `.env` file in the root directory followi
 
 Here you can see the purpose of each environment variable.
 
-- `VITE_SUMMARIZATION_API_URL`: Provides the token to summarization access into the manifest `trial_tokens` following [this guide from chrome documentation](https://googlechrome.github.io/OriginTrials/developer-guide.html)
+- `VITE_SUMMARIZATION_API`: Provides the token to summarization access into the manifest `trial_tokens` following [this guide from chrome documentation](https://googlechrome.github.io/OriginTrials/developer-guide.html)
 - `VITE_CHROME_EXTENSION_ID`: Your chrome extension ID, used to register the token for the [summarization API](https://chromestatus.com/feature/5193953788559360).
-
+- `VITE_GENERATOR_API`: Provides the token to prompt api access into the manifest `trial_tokens` following [this guide from chrome documentation](https://googlechrome.github.io/OriginTrials/developer-guide.html)
 > [!NOTE]
 > If any of them is missing, please create an issue following the [contribution guidelines](./.github.CONTRIBUTION.md).
 
