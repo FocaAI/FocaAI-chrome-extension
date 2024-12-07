@@ -2,6 +2,7 @@
 export default {
   darkMode: ['class'],
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  prefix: 'fx-',
   theme: {
     extend: {
       borderRadius: {
