@@ -52,7 +52,7 @@ export function getManifest(
     name: pkg.displayName ?? pkg.name,
     version: pkg.version,
     manifest_version: 3,
-    permissions: ['contextMenus', 'sidePanel', 'aiLanguageModelOriginTrial'],
+    permissions: ['contextMenus', 'sidePanel', 'aiLanguageModelOriginTrial', 'tabs'],
     ...manifest,
     trial_tokens: [env.VITE_SUMMARIZATION_API || '', env.VITE_GENERATOR_API || ''],
   };

@@ -9,7 +9,7 @@ export default async function renderContent(
     mode: import.meta.env.DEV ? 'open' : 'closed',
   });
   const appRoot = document.createElement('div');
-
+  appRoot.id = 'foca-ai-extension-root'
   if (import.meta.hot) {
     const { addViteStyleTarget } = await import(
       '@samrum/vite-plugin-web-extension/client'
