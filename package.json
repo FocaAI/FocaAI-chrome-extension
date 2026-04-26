@@ -19,13 +19,19 @@
     "serve:chrome": "web-ext run -t chromium --start-url \"https://google.com\" --source-dir ./dist/"
   },
   "dependencies": {
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.462.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.5.5",
+    "tailwindcss-animate": "^1.0.7",
     "webextension-polyfill": "~0.12.0"
   },
   "devDependencies": {
     "@samrum/vite-plugin-web-extension": "^5.1.1",
     "@types/chrome": "^0.0.287",
+    "@types/node": "^22.10.1",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@types/webextension-polyfill": "^0.12.1",

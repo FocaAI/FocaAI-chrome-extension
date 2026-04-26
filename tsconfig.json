@@ -3,7 +3,13 @@
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "types": ["chrome"],
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
   },
   "files": [],
   "references": [

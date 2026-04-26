@@ -22,9 +22,10 @@ export default defineConfig(({ mode }) => {
     },
     define: {
       'process.env': {
-        VITE_SUMMARIZATION_API_URL: JSON.stringify(
-          env.VITE_SUMMARIZATION_API_URL
+        VITE_SUMMARIZATION_API: JSON.stringify(
+          env.VITE_SUMMARIZATION_API
         ),
+        VITE_GENERATOR_API: JSON.stringify(env.VITE_GENERATOR_API),
       },
     },
   };
